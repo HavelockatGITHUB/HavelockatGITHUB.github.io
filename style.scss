@@ -151,16 +151,14 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+	padding: 0px;
+	border: 2px solid #000;
+	background-color: #bababa;
+	color: #000;
 
   @include mobile {
-    text-align: center;
+    	text-align: center;
   }
 }
 
