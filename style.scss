@@ -28,7 +28,6 @@ body {
 	margin: 0 auto;
 	max-width: 900px;
 	padding: 0 10px;
-	border: 2px solid #000;
 	width: 100%;
 }
 
@@ -155,7 +154,7 @@ img {
 .masthead {
 	padding: 0px;
 	border: 2px solid #000;
-	background-color: #bababa;
+	background-color: #d0d0d0;
 	color: #000;
 
   @include mobile {
@@ -237,9 +236,10 @@ nav {
   }
 }
 
-//
-// .main
-//
+.main {
+	border: 2px solid #000;
+	background-color: #d0d0d0;
+}
 
 .posts > .post {
   padding-bottom: 2em;
