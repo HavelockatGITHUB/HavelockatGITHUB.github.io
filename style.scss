@@ -18,20 +18,21 @@ html {
 }
 
 body {
-	background-color: #ffffff;
-  	font: 18px/1.4 'Garamond', Helvetica, Arial, sans-serif;
-  	color: #000000;
+	background: $white;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 740px;
+  padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Garamond', Helvetica, Arial, sans-serif;
-  color: #000000;
+  font-family: $helveticaNeue;
+  color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -60,6 +61,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  color: $gray;
 }
 
 p {
@@ -67,11 +69,11 @@ p {
 }
 
 a {
-  color: #000;
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: #d82525;
+    color: $blue;
   }
 }
 
@@ -115,7 +117,7 @@ img {
 
 .date {
   font-style: italic;
-  color: #000;
+  color: $gray;
 }
 
 // Specify the color of the selection
@@ -147,40 +149,25 @@ img {
 //
 // .masthead
 //
-.McKenna {
-	margin: 50px 20px 10px 180px;
-}
 
 .wrapper-masthead {
+  margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 10px 10px 20px 10px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-  background-color:#d0d0d0;
-  color:#000;
-  width: 1000px;
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
   }
 }
 
-.sidebar {
-	background-color: #d0d0d0;
-	border: 2px solid #000;
-	width: 200px;
-	float: right;
-        text-align: justify;
-        padding: 15px 15px 20px 15px;
-}
-
 .site-avatar {
   float: left;
   width: 70px;
   height: 70px;
+  margin-right: 15px;
 
   @include mobile {
     float: none;
@@ -189,7 +176,7 @@ img {
   }
 
   img {
-    border-radius: 50%;
+    border-radius: 5px;
   }
 }
 
@@ -205,17 +192,18 @@ img {
 
 .site-name {
   margin: 0;
-  color: #000;
+  color: $darkGray;
   cursor: pointer;
-  font-family: 'Garamond', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 2em;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
   letter-spacing: 1px;
 }
 
 .site-description {
-  color: #000;
-  font-size: 15px;
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
 
   @include mobile {
     margin: 3px 0;
@@ -223,11 +211,10 @@ img {
 }
 
 nav {
-  float: left;
+  float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: 'Garamond', Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  margin: 2px 0px 0px 0px;
+  font-family: $helveticaNeue;
+  font-size: 18px;
 
   @include mobile {
     float: none;
@@ -238,7 +225,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: #000;
+    color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -248,20 +235,15 @@ nav {
       color: $blue;
     }
   }
-
-
-#main.container {
-	border: 2px solid #000;
-	background-color: #d0d0d0;
-	padding: 10px;
-	width: 1000px;
 }
 
+//
+// .main
+//
 
 .posts > .post {
-  	padding-bottom: 2em;
-  	border-bottom: 1px dashed #fff;
-  	margin: 0px 220px 0px 10px;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
@@ -272,9 +254,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid #fff;
+    border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: #000;
+    color: $gray;
     font-size: 22px;
     font-style: italic;
   }
@@ -283,25 +265,17 @@ nav {
     margin-top: 10px;
   }
 
-.page {
-	margin: 0px 220px 0px 10px;
-}
-
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
   }
 }
 
-.entry {
-	padding: 0px 220px 0px 10px;
-}
-
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #d0d0d0;
+  background-color: $lightGray;
 }
 
 footer {
