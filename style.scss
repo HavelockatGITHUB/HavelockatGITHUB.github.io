@@ -176,6 +176,7 @@ img {
 	float: right;
 	text-align: justify;
 	padding: 15px 15px 20px 15px;
+	margin: 0px 100px 0px 0px;
 }
 
 .site-avatar {
@@ -256,6 +257,11 @@ nav {
 	background-color: #d0d0d0;
 	padding: 10px;
 	width: 1000px;
+}
+
+.page {
+	margin: 0px 220px 0px 0px;
+  	padding: 0px 0px 15px 10px;
 }
 
 .posts > .post {
