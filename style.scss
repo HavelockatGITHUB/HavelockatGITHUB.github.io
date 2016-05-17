@@ -18,7 +18,11 @@ html {
 }
 
 body {
-	background-color: #ffffff;
+	background-image: url("http://galerie.mobilmania.cz/data/593/DSC03356.JPG");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size:cover;
 	font-size: 18px/1.4;
 	font-family: 'Garamond', Helvetica, Arial, sans-serif;
 	color: #000000;
