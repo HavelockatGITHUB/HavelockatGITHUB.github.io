@@ -31,15 +31,15 @@
       </div>
     </div>
 
-    <div id="sidebar" class="container">
-      <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-        <div class="site-info">
-          <p class="site-description">{{ site.description }}</p>
-        </div>
-    </div>
-
     <div id="main" role="main" class="container">
       {{ content }}
+        
+      <div id="sidebar" class="container">
+         <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+        <div class="site-info">
+         <p class="site-description">{{ site.description }}</p>
+        </div>
+      </div>
     </div>
 
     <div class="wrapper-footer">
