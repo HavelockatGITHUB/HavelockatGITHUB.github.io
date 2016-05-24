@@ -177,10 +177,10 @@ img {
 	width: 200px;
 	height: 300px;
 	text-align: justify;
-	position: relative;
-	float: right;
 	padding: 15px 15px 20px 15px;
-	margin-right: 20%;
+	position: relative;
+	right: 50%;
+	margin-right: -500px;
 }
 
 .site-avatar {
